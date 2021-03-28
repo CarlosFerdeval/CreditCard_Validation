@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--*** 
+Author 	Carlos Fernandez 
+Date written 	06/09/2020 
+Assignment Order Form2
+--> 
+<head>
+     <link rel="stylesheet" type="text/css" href="../css/style1.css" />
+     <meta charset="utf-8" content="width=device-width, initial-scale=1" />
+     <title>Form</title>
+	 <script src="../js/code1.js">
+	 </script>
+	
+</head>
+<body>
+<form onsubmit= "return validateForm()">
+		<div class="row">
+		<div class="col-75">
+		<div class="container">
+    
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Customer Details</h3>
+            <label for="fname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="">
+			<span id="firstNameError"></span><br /><br />
+            <label for="adr">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="">
+			<span id="lastNameError"></span><br /><br />
+            <label for="postcode">Postcode</label>
+            <input type="text" id="postcode" name="postcode" placeholder="">
+			<span id="postCodeError"></span><br /><br />
+			<label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="">
+			<span id="emailError"></span><br /><br />
+
+            
+
+          <div class="col-50">
+            <h3>Payment Details</h3>
+           
+              <label for="cname">Credit Card <select id="cname" name="cname"></label>           
+              <option value="1">American Express</option>
+              <option value="2">Visa</option>
+              <option value="3">MasterCard</option>           
+              </select>	
+              <label></label>			  
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnumber" name="cardnumber" placeholder="" size="16">
+			  <span id="ccNumberError"></span><br /><br />			  
+              <label for="cvv">CVV</label>
+              <input type="text" id="ccvnumber" name="ccv" placeholder="">	
+			  <span id="ccvNumberError"></span><br /><br />				  
+              <label for="expired">Expiry MM/YY:</label>
+			  <span id="expiredNumberError"></span><br /><br />	
+                  
+              <select id="exyear">
+				  <option value="2019">2019</option>
+				  <option value="2020">2020</option>
+				  <option value="2021">2021</option>
+				  <option value="2022">2022</option>
+				  <option value="2023">2023</option>
+				  <option value="2024">2024</option>
+				  <option value="2025">2025</option>
+				  <option value="2026">2026</option>
+				  <option value="2027">2027</option>
+              </select>
+			  <select id="exmonth">	
+				  <option value="0">Select Month</option>			  
+				  <option value="01">Jan</option>
+				  <option value="02">Feb</option>
+				  <option value="03">Mar</option>
+				  <option value="04">Apr</option>
+				  <option value="05">May</option>
+				  <option value="06">Jun</option>
+				  <option value="07">Jul</option>
+				  <option value="08">Aug</option>
+				  <option value="09">Sep</option>
+				  <option value="10">Oct</option>
+				  <option value="11">Nov</option>
+				  <option value="12">Dec</option>
+              </select>        
+                          
+             </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <input type="submit" class="btn">  
+		<input onclick="help()" value="Help" class="btn" ></br>	
+        <input  onclick="openNewSite()"  value="GO TO OTHER WEBSITES"  class="btn2 " >
+		
+    </div>
+  </div>
+
+  
+
+
+</form>
+</body>
+</html>
+
+
+
